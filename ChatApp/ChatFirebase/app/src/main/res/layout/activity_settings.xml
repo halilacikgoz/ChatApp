@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.dolby.chatfirebase.SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="50dp"
+        android:src="@drawable/defualt_icon" />
+
+    <TextView
+        android:id="@+id/settings_displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_image"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:text="Display Name"
+        android:textColor="@android:color/white"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/settings_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_displayName"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="Hi,I Love HORHOR."
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/settings_changeStatus_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@android:color/white"
+        android:text="CHANGE STATUS"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/settings_changeDisplayName_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/settings_changeStatus_btn"
+        android:layout_alignEnd="@+id/settings_changeStatus_btn"
+        android:layout_alignLeft="@+id/settings_changeStatus_btn"
+        android:layout_alignRight="@+id/settings_changeStatus_btn"
+        android:layout_alignStart="@+id/settings_changeStatus_btn"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@android:color/white"
+        android:text="CHANGE NAME"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+</RelativeLayout>

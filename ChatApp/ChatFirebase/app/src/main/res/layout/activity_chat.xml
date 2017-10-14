@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    tools:context="com.example.dolby.chatfirebase.ChatActivity">
+
+    <include
+        android:id="@+id/chat_appBar"
+        layout="@layout/app_bar_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messages_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_below="@+id/chat_appBar"
+
+        ></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/relativeLayout">
+
+
+        <ImageButton
+            android:id="@+id/chat_addImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_add_a_photo_black_36dp" />
+
+        <EditText
+            android:id="@+id/chat_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/chat_addImageBtn"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/chat_addImageBtn"
+            android:layout_toLeftOf="@+id/chat_sendImageBtn"
+            android:layout_toRightOf="@+id/chat_addImageBtn"
+            android:background="@android:color/white"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:hint="Enter Message" />
+
+
+        <ImageButton
+            android:id="@+id/chat_sendImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_send_black_36dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
